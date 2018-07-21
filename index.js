@@ -1,4 +1,4 @@
-
+const Handler = require('./lib/handler')
 
 module.exports = (robot) => {
   robot.on(
