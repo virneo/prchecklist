@@ -1,4 +1,5 @@
 prchecklists:
+  title: 'PR Guildelines checklist'
   checklist:
     - "Check 1"
     - "Check 2"
