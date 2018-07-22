@@ -2,7 +2,8 @@ const Handler = require('./lib/handler')
 
 module.exports = (robot) => {
   robot.on(
-    [ 'pull_request',
+    ['pull_request.opened',
+      'pull_request.edited',
       'pull_request_review',
       'pull_request_review_comment'
     ],
@@ -10,8 +11,7 @@ module.exports = (robot) => {
   )
 
   robot.on(
-    [ 'issue_comment',
-      'issues'
+    ['issue_comment'
     ],
     (context) => { Handler.handleIssue(context) }
   )
